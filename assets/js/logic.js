@@ -28,7 +28,12 @@ function quizEnd() {
 }
 
 function clockTick() {
+    time--;
+    timerElement.textContent = time;
 
+    if (time <= 0){
+        quizEnd();
+    }
 }
 
 function startQuiz() {
