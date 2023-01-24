@@ -24,7 +24,15 @@ function questionClick() {
 }
 
 function quizEnd() {
+    clearInterval(timerID);
 
+    let endScreenElement = document.getElementById("end-screen");
+    endScreenElement.removeAttribute("class");
+
+    let finalScoreElement = document.getElementById("final-score");
+    finalScoreElement.textContent = time;
+
+    questionsElement.setAttribute("class", "hide");
 }
 
 function clockTick() {
