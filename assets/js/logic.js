@@ -15,7 +15,26 @@ let feedBackElement = document.getElementById("feedback");
 let sfxRight = new Audio("assets/sfx/correct.wav");
 
 function getQuestions() {
+    let currentQuestion = questions[currentQuestionIndex];
 
+    let titleElement = document.getElementById("question-title");
+
+    titleElement.textContent = currentQuestion.title;
+
+    choicesElement.innerHTML = "";
+
+    currentQuestion.choices.forEach(function(choice,index) {
+        let choiceButton = document.createElement("button");
+
+        choiceButton.setAttribute("class", "choice");
+        choiceButton.setAttribute("value", choice);
+
+        choiceButton.textContent = `${index + 1}. ${choice}`
+
+        choiceButton.addEventListener("click", questionClick);
+
+        choicesElement.append(choiceButton);
+    })
 }
 
 
@@ -51,6 +70,10 @@ function startQuiz() {
     questionsElement.removeAttribute("class");
 
     timerID = setInterval(clockTick, 1000);
+
+    timerElement.textContent = time;
+
+    getQuestions();
 }
 
 function saveHighScore() {
