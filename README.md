@@ -66,9 +66,9 @@ In this quiz application, the users' grades are the remaining time that the user
 </br>
 
 ### Text and Sound Effects
-Any time users choose the answers. There is a text and a sound effect (sfx) depends on whether it is a correct or an incorrect answer by including.
+Any time users choose the answers, there is a text effect either `Wrong` or `Correct!` and a sound effect (sfx) depends on whether it is a correct or an incorrect answer by including.
 
-![Correct and Wrong Answer Effects](./assets/img/readme-04-answer-effects.mp4)
+![Correct and Wrong Answer Effects](./assets/img/readme-04-answer-effects.gif)
 
 </br>
 
