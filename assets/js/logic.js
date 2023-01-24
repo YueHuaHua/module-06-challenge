@@ -14,16 +14,13 @@ let feedBackElement = document.getElementById("feedback");
 
 let sfxRight = new Audio("assets/sfx/correct.wav");
 
-function startQuiz() {
+function getQuestions() {
 
 }
+
 
 function questionClick() {
 
-}
-
-function startQuiz() {
-    
 }
 
 function quizEnd() {
@@ -32,6 +29,15 @@ function quizEnd() {
 
 function clockTick() {
 
+}
+
+function startQuiz() {
+    let startScreenElement = document.getElementById("start-screen");
+    startScreenElement.setAttribute("class", "hide");
+
+    questionsElement.removeAttribute("class");
+
+    timerID = setInterval(clockTick, 1000);
 }
 
 function saveHighScore() {
