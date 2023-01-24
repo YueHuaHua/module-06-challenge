@@ -20,7 +20,7 @@ This challenge presents a real-world situation in which the newfound JavaScript 
 
 </br>
 
-![application demo](./assets/img/readme-01-application-demo.gif)
+![Application Demo](./assets/img/readme-01-application-demo.gif)
 
 
 </br>
@@ -34,7 +34,7 @@ This application works by clicking the `start quiz` button and choosing any answ
 ### Clean and Responsive UI
 This application offers a responsive User Interface (UI) that adapts to multiple screen sizes which can be seen on following gif.
 
-![responsive UI demo](./assets/img/readme-02-responsive-demo.gif)
+![Responsive UI Demo](./assets/img/readme-02-responsive-ui.gif)
 
 </br>
 
@@ -61,14 +61,14 @@ Once the `start quiz` button is clicked, the first questions appears. The next q
 
 In this quiz application, the users' grades are the remaining time that the users have left after finishing the quiz. Hence, users should finish the quiz as quick as possible. However, any incorrect questions leads to 10 secs of time deduction.
 
-![responsive UI demo](./assets/img/readme-02-responsive-demo.gif)
+![Grading System](./assets/img/readme-03-grading-system.gif)
 
 </br>
 
 ### Text and Sound Effects
 Any time users choose the answers. There is a text and a sound effect (sfx) depends on whether it is a correct or an incorrect answer by including.
 
-![responsive UI demo](./assets/img/readme-02-responsive-demo.gif)
+![Correct and Wrong Answer Effects](./assets/img/readme-04-answer-effects.mp4)
 
 </br>
 
@@ -76,7 +76,13 @@ Any time users choose the answers. There is a text and a sound effect (sfx) depe
 
 After finishing the quiz, users can input their name. Those names alongside with the results are stored in the `highscores` local storage and sorted before showing them onto the highscore board. Once the users input their name, the highscore board appears. Another way to access this board is by clicking `View Highscore` on the top left corner of main page.
 
-![responsive UI demo](./assets/img/readme-02-responsive-demo.gif)
+![Highscore Board](./assets/img/readme-05-highscore-board.gif)
+
+</br>
+
+<img src="./assets/img/readme-06-local-storage.JPG" alt="Local Storage" style="width: 640px">
+
+</br>
 
 </br>
 
