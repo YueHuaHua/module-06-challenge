@@ -14,9 +14,9 @@ function printHighScores() {
     })
 }
 
-
 function clearHighScores(){
-
+    localStorage.removeItem("highscores");
+    window.location.reload();
 }
 
 var clearButton = document.getElementById("clear");
